@@ -1,20 +1,21 @@
-"""TODO: Replace with a one-line summary of the program's purpose (<73 chars).
+ """Read a user's name and age and estimate their birth year.
+
 
 Input:
-    TODO: Replace with a major input, including its type and source.
-    TODO: Replace with another major input, or delete this TODO line.
-    TODO: Replace with another major input, or delete this TODO line.
-
+       A name entered by the user as a string.
+       An age entered by the user as an integer.
+  
 Process:
-    TODO: Replace with a major processing step.
+       Subtract the user's age from the current year.
 
 Output:
-    TODO: Replace with a major output, including its type and destination.
+       A personalized message with the name and approximate birth year.
 
 Typical usage example:
-    TODO: Replace with the input prompt and original name-input example.
-    TODO: Replace with the input prompt and original age-input example.
-    TODO: Replace with the resulting output from those inputs.
+       Enter your name: Alex
+       Enter your age: 20
+       Alex, you were born around 2006.
+      (Example assumes the current year is 2026.)
 """
 
 # === Imports ===
@@ -29,14 +30,14 @@ def main() -> None:
     """Run the name-age program."""
 
     # Get user input.
-    # TODO: Replace with code to get user's name as a string. See zyBooks 1.3.
-    # TODO: Replace with code to get user's age as an integer. See zyBooks 2.6.
+       name = input("Enter your name: ")
+       age = int(input("Enter your age: "))
 
     # Calculate user's approximate birth year.
-    # TODO: Replace with code to process data. See zyBooks 1.16 & 1.17.
+       birth_year = CURRENT_YEAR - age
 
     # Output personalized message with user's name and birth year.
-    # TODO: Replace with code to output formatted results. zyBooks 1.3 & 2.7.
+       print(f"{name}, you were born around {birth_year}.")
 
 
 # === Main Guard ===
